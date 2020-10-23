@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CartItem">
+    <RelativeLayout
+        android:id="@+id/relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorAccent"
+        android:layout_alignParentTop="true"
+        >
+        <TextView
+            android:id="@+id/totalePrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Totale price"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:textSize="16dp"
+
+            />
+
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cart_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativelayout"
+        android:layout_above="@+id/next_btn"
+        android:layout_marginTop="10dp"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="next"
+        android:textSize="16dp"
+        android:background="@drawable/button2"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/shipment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="congratelitions your final orders isplaced succesfully. sooner will received at door stap."
+        android:textSize="16dp"
+        android:textAlignment="center"
+        android:layout_centerVertical="true"
+         android:visibility="gone"
+        />
+</RelativeLayout>

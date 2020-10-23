@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/admins"
+    tools:context=".Admins"
+
+    >
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/camera"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        />
+    <EditText
+        android:id="@+id/prodect_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_below="@+id/picture"
+        android:layout_marginTop="20dp"
+        android:hint="prodect name"
+        android:textColorHint="@android:color/white"
+        android:textSize="16sp"
+        android:background="@drawable/edit_text"
+        android:padding="10dp"
+        />
+    <EditText
+        android:id="@+id/prodect_descreption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_below="@+id/prodect_name"
+        android:layout_marginTop="20dp"
+        android:hint="product description"
+        android:textColorHint="@android:color/white"
+        android:textSize="16sp"
+        android:background="@drawable/edit_text"
+        android:padding="10dp"
+        />
+    <EditText
+        android:id="@+id/prodect_price"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="40dp"
+    android:layout_marginRight="40dp"
+    android:layout_below="@+id/prodect_descreption"
+    android:layout_marginTop="20dp"
+    android:hint="product price"
+    android:textColorHint="@android:color/white"
+    android:textSize="16sp"
+    android:background="@drawable/edit_text"
+    android:padding="10dp"
+    />
+    <Button
+        android:id="@+id/addPro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:text="Add prodect"
+        android:textSize="16sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@id/prodect_price"
+        android:textColor="@android:color/white"
+        />
+
+</RelativeLayout>
